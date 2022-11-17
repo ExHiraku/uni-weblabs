@@ -11,6 +11,8 @@
     <!-- Imports CSS classes from a local stylesheet -->
     <link rel="shortcut icon" href="static/images/wavewithbg_tp.ico" type="image/x-icon">
     <!-- Sets the Icon of the website -->
+    <script src="https://kit.fontawesome.com/557fa6a3c5.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Kit that allows me to use icons -->
     <title>Andrew | CPD Portfolio</title>
 </head>
 
@@ -36,8 +38,8 @@
                     <li><a href="/" class="navlink">Home</a></li>
                     <li><a href="#about" class="navlink">About</a></li>
                     <li><a href="#cpd" class="navlink">CPD</a></li>
-                    <li><a href="https://github.com/ExHiraku" class="navlink">Projects</a></li>
-                    <li class="contactbtn"><a href="/contact" class="navlink">Contact Me</a></li>
+                    <li><a target="_blank" href="https://github.com/ExHiraku" class="navlink">Projects</a></li>
+                    <li class="contactbtn"><a target="_blank" href="/contact" class="navlink">Contact Me</a></li>
                 </div>
             </ul>
         </div>
@@ -63,8 +65,8 @@
         </div>
     </div>
 
-    <div class="about">
-        <div class="abouttitle" id="about">About Me</div>
+    <div class="about" id="about">
+        <div class="abouttitle">About Me</div>
         <div class="grid-container">
             <div class="aboutdevelopment">
                 <h1 class="orange-text">Development</h1>
@@ -90,10 +92,12 @@
             <div class="aboutpersonal">
                 <h1 class="orange-text">Personal</h1>
                 <p>I'm a 19 year old developer and aspiring entrepreneur. I am currently trying to grow and maintain my
-                    own software development company called <a href="https://exultsoftware.com">Exult</a>. It currently
+                    own software development company called <a target="_blank"
+                        href="https://exultsoftware.com">Exult</a>. It currently
                     has a few projects including Discord Bots, Minecraft modding, Minecraft modpacks, a Minecraft
                     network and hopefully much more to come in the future. I currently work remotely for
-                    <a href="https://bisecthosting.com">BisectHosting</a> as a Python Developer and I also help around
+                    <a target="_blank" href="https://bisecthosting.com">BisectHosting</a> as a Python Developer and I
+                    also help around
                     with their Discord Community Management and Partner Program.
                 </p>
                 <img src="static/images/personal.png" alt="Hand-drawn art of balcony with view of city and peple"
@@ -105,6 +109,61 @@
     <div class="cpd">
         <div class="cpdtitle" id="cpd">
             Continuous Professional Development
+        </div>
+        <div class="cpddesc">
+            Throughout the last 2 months since starting at NTU, I have carried out a variety of CPD-related tasks, as
+            well as attended various events held by the university, as well as the Developers' Society (DevSoc).<br><br>
+            The table below showcases all of the events and activities I have attended, as well as how many points/hours
+            I received for them, and a brief description on what happened during that event.
+        </div>
+
+        <div class="cpdtable">
+            <table>
+                <tr style="border: 1px solid white;">
+                    <th>Name</th>
+                    <th>Points Received</th>
+                    <th>Description</th>
+                    <th>Evidence</th>
+                </tr>
+                <tr>
+                    <td>Job (Remote Python Developer)</td>
+                    <td>10</td>
+                    <td>I am a remote python developer for an american games hosting company called <a target="_blank"
+                            href="https://bisecthosting.com">BisectHosting</a>. This
+                        is a contractor role that allows me to work as little or as many hours as I want providing there
+                        is work available to be completed. I average between 20 and 30 hours per week, and I am paid
+                        hourly for this role.</td>
+                    <td><a target="_blank" href="static/images/work_evidencing.png">Direct image link to an average
+                            working week's
+                            timesheet.</a><br><br>Repository containing the code I write for this company can be shared
+                        upon
+                        request, this must remain closed-source due to previous attemps of stealing code without credit.
+                    </td>
+                </tr>
+                <tr>
+                    <td>DevSoc Hacktoberfest</td>
+                    <td>5</td>
+                    <td>Hacktoberfest is a yearly programming event that encourages developers to contribute to OSS
+                        (Open-Source Software) for this event, I contributed a code foundations and structure rewrite,
+                        and as a side-note, I have prepared new and improved hosting options for their bot as well.
+                    </td>
+                    <td><a target="_blank" href="https://github.com/NTUDevSoc/Discord-Bot/tree/dpy2.0-rewrite">GitHub
+                            Repository link
+                            (DevSoc are yet to review my changes)</a></td>
+                </tr>
+                <tr>
+                    <td>Digital Horizons Week</td>
+                    <td>6</td>
+                    <td>Digital Horizons Week held numerous events throughout the week for students to have a break from
+                        the work they are doing as part of their course, and get involved in special lectures and
+                        activities instead. To evidence attendance of these events/lectures we were required to take
+                        notes on the information given throughout the week.</td>
+                    <td><a target="_blank"
+                            href="https://docs.google.com/document/d/1BdL1xKARICAHtMW1KkTxGq_bMg8eTZ8gI12i7DwDvAY/edit?usp=sharing">Google
+                            document containing all notes made.</a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -125,6 +184,8 @@
         <img id="enlargedabtpersimg">
         <div class="imgdescription" id="descabtimgpers"></div>
     </div>
+
+    <button onclick="goToTop()" id="totopbtn" title="Go to Top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="static/js/main.js"></script>
 </body>
