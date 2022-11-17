@@ -54,3 +54,49 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+var enlargedImageDev = document.getElementById("enlargeimgdev");
+var enlargedImageContent = document.getElementById("enlargeimgcontent");
+var enlargedImagePers = document.getElementById("enlargeimgpers")
+
+var imageDev = document.getElementById("aboutdevelopmentimg");
+var imageContent = document.getElementById("aboutcontentimg");
+var imagePers = document.getElementById("aboutpersonalimg");
+
+var imgToEnlargeDev = document.getElementById("enlargedabtdevimg");
+var imgToEnlargeContent = document.getElementById("enlargedabtcontentimg");
+var imgToEnlargePers = document.getElementById("enlargedabtpersimg");
+
+var descriptionTextDev = document.getElementById("descabtimgdev");
+var descriptionTextContent = document.getElementById("descabtimgcontent");
+var descriptionTextPers = document.getElementById("descabtimgpers");
+
+imageDev.onclick = function () {
+    enlargedImageDev.style.display = "block";
+    imgToEnlargeDev.src = this.src;
+    descriptionTextDev.innerHTML = this.alt;
+};
+imageContent.onclick = function () {
+    enlargedImageContent.style.display = "block";
+    imgToEnlargeContent.src = this.src;
+    descriptionTextContent.innerHTML = this.alt;
+}
+imagePers.onclick = function () {
+    enlargedImagePers.style.display = "block";
+    imgToEnlargePers.src = this.src;
+    descriptionTextPers.innerHTML = this.alt;
+}
+
+var spanDev = document.getElementById("close-dev");
+var spanContent = document.getElementById("close-content");
+var spanPers = document.getElementById("close-pers");
+
+spanDev.onclick = function () {
+    enlargedImageDev.style.display = "none";
+}
+spanContent.onclick = function () {
+    enlargedImageContent.style.display = "none";
+}
+spanPers.onclick = function () {
+    enlargedImagePers.style.display = "none";
+}

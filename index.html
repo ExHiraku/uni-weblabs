@@ -18,51 +18,112 @@
 
     <!-- Navigation Menu/Header + Hero Section -->
     <div class="hero-background">
-        <div class="hero-bottom">
 
-            <!-- Header/Navigation Menu (navbar class)-->
-            <div class="navigation">
+        <!-- Header/Navigation Menu (navbar class)-->
+        <div class="navigation">
 
-                <!-- Title Heading (logo class)-->
-                <div class="navtitle">Andeh<span class="orange-text">Development</span></div>
+            <!-- Title Heading (logo class)-->
+            <div class="navtitle">Andeh<span class="orange-text">Development</span></div>
 
-                <!-- Navigation Links (nav-links class) -->
-                <ul class="navmenu">
-                    <!-- Hamburger Icon (hamburger class)-->
-                    <input type="checkbox" name="hamburgermenu" id="hamburgermenu" class="hamburger">
-                    <label for="hamburgermenu" class="hamburgermenu">&#9776;</label>
+            <!-- Navigation Links (nav-links class) -->
+            <ul class="navmenu">
+                <!-- Hamburger Icon (hamburger class)-->
+                <input type="checkbox" name="hamburgermenu" id="hamburgermenu" class="hamburger">
+                <label for="hamburgermenu" class="hamburgermenu">&#9776;</label>
 
-                    <!-- Navigation Links (menu class)-->
-                    <div class="navlinks">
-                        <li><a href="/" class="navlink">Home</a></li>
-                        <li><a href="#about" class="navlink">About</a></li>
-                        <li><a href="#cpd" class="navlink">CPD</a></li>
-                        <li><a href="/projects" class="navlink">Projects</a></li>
-                        <li class="contactbtn"><a href="/contact" class="navlink">Contact Me</a></li>
-                    </div>
-                </ul>
-            </div>
-
-            <!-- Hero Section -->
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-logo">
-                        <img src="static/images/wave.png" alt="wave" width="100rem">
-                    </div>
-                    <div class="hero-header">
-                        <p>Hey! <span class="orange-text">I'm Andrew...</span></p>
-                    </div>
-                    <div class="hero-text">
-                        <p>I'm a</p>
-                        <p class="typewrite orange-text" data-period="2000"
-                            data-type='[ "‎ Developer!", "‎ Student!", "‎ Creator!" ]'>I'm
-                            a <span class="wrap"></span>
-                        </p>
-                    </div>
-                    <div class="gettingstartedbtn"><a href="#about">Get Started!</a></div>
+                <!-- Navigation Links (menu class)-->
+                <div class="navlinks">
+                    <li><a href="/" class="navlink">Home</a></li>
+                    <li><a href="#about" class="navlink">About</a></li>
+                    <li><a href="#cpd" class="navlink">CPD</a></li>
+                    <li><a href="https://github.com/ExHiraku" class="navlink">Projects</a></li>
+                    <li class="contactbtn"><a href="/contact" class="navlink">Contact Me</a></li>
                 </div>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="static/images/wave.png" alt="wave" width="100rem">
+                </div>
+                <div class="hero-header">
+                    <p>Hey! <span class="orange-text">I'm Andrew...</span></p>
+                </div>
+                <div class="hero-text">
+                    <p>I'm a</p>
+                    <p class="typewrite orange-text" data-period="2000"
+                        data-type='[ "‎ Developer!", "‎ Student!", "‎ Creator!" ]'>I'm
+                        a <span class="wrap"></span>
+                    </p>
+                </div>
+                <div class="gettingstartedbtn"><a href="#about">Get Started!</a></div>
             </div>
         </div>
+    </div>
+
+    <div class="about">
+        <div class="abouttitle" id="about">About Me</div>
+        <div class="grid-container">
+            <div class="aboutdevelopment">
+                <h1 class="orange-text">Development</h1>
+                <p>Development is a (as of mid 2020-lockdown) a 2 year hobby of mine that I have been progressively
+                    improving in almost daily. Starting off with very basic python, moving up to more intermediate and
+                    advanced aspects of the language through developing discord bots. I used to take enjoyment from
+                    running communities on the platform, and having the ability to develop my own bots to do whatever I
+                    need them to do in order to help manage said communities was a huge help. The image below showcases
+                    a small snippet of what my development workspace looks like for discord bots, using Visual Studio
+                    Code. I later progressed onto basic-level web development, and have much more recently begun Java to
+                    begin exploring the minecraft-modding space.</p>
+                <img src="static/images/vsc.png" alt="Visual Studio Code Python Snippet" width="60%"
+                    id="aboutdevelopmentimg">
+            </div>
+            <div class="aboutcontent">
+                <h1 class="orange-text">Content</h1>
+                <p>Amongst many other individuals my age, becoming a content creator when I was older was a huge dream
+                    of mine, and still is to an extent, however my passion now lies within development and
+                    entrepreneurship. I still create content from time to time in the form of twitch streams, and have
+                    recently begun short-form content for platforms such as YouTube and TikTok.</p>
+                <img src="static/images/content.png" alt="Twitch Stream Statistics" width="75%" id="aboutcontentimg">
+            </div>
+            <div class="aboutpersonal">
+                <h1 class="orange-text">Personal</h1>
+                <p>I'm a 19 year old developer and aspiring entrepreneur. I am currently trying to grow and maintain my
+                    own software development company called <a href="https://exultsoftware.com">Exult</a>. It currently
+                    has a few projects including Discord Bots, Minecraft modding, Minecraft modpacks, a Minecraft
+                    network and hopefully much more to come in the future. I currently work remotely for
+                    <a href="https://bisecthosting.com">BisectHosting</a> as a Python Developer and I also help around
+                    with their Discord Community Management and Partner Program.
+                </p>
+                <img src="static/images/personal.png" alt="Hand-drawn art of balcony with view of city and peple"
+                    width="60%" id="aboutpersonalimg">
+            </div>
+        </div>
+    </div>
+
+    <div class="cpd">
+        <div class="cpdtitle" id="cpd">
+            Continuous Professional Development
+        </div>
+    </div>
+
+    <div class="enlargeimg" id="enlargeimgdev">
+        <span class="close-enlarged" id="close-dev">&times;</span>
+        <img id="enlargedabtdevimg">
+        <div class="imgdescription" id="descabtimgdev"></div>
+    </div>
+
+    <div class="enlargeimg" id="enlargeimgcontent">
+        <span class="close-enlarged" id="close-content">&times;</span>
+        <img id="enlargedabtcontentimg">
+        <div class="imgdescription" id="descabtimgcontent"></div>
+    </div>
+
+    <div class="enlargeimg" id="enlargeimgpers">
+        <span class="close-enlarged" id="close-pers">&times;</span>
+        <img id="enlargedabtpersimg">
+        <div class="imgdescription" id="descabtimgpers"></div>
     </div>
 
     <script src="static/js/main.js"></script>
