@@ -5,46 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tags -->
     <link rel="stylesheet" href="https://use.typekit.net/win1udz.css">
     <!-- Imports an Adobe Font, this is NOT a css framework -->
     <link rel="stylesheet" href="static/styles/style.css">
-    <!-- Imports CSS classes from external, local stylesheet -->
-    <link rel="shortcut icon" href="static/images/wavewithbg.ico" type="image/x-icon">
-    <!--  -->
-    <title>Andrew Mason</title>
+    <!-- Imports CSS classes from a local stylesheet -->
+    <link rel="shortcut icon" href="static/images/wavewithbg_tp.ico" type="image/x-icon">
+    <!-- Sets the Icon of the website -->
+    <title>Andrew | CPD Portfolio</title>
 </head>
 
 <body style="font-family: open-sans;">
-    <div class="header-hero">
-        <div class="nav-container">
-            <div class="nav">
-                <div class="navbrand">
-                    <img src="static/images/wave.png" alt="Wave Icon" class="">
-                    <div class="navtitle">
-                        <p>Andeh<span>Development</span></p>
+
+    <!-- Navigation Menu/Header + Hero Section -->
+    <div class="hero-background">
+        <div class="hero-bottom">
+
+            <!-- Header/Navigation Menu (navbar class)-->
+            <div class="navigation">
+
+                <!-- Title Heading (logo class)-->
+                <div class="navtitle">Andeh<span class="orange-text">Development</span></div>
+
+                <!-- Navigation Links (nav-links class) -->
+                <ul class="navmenu">
+                    <!-- Hamburger Icon (hamburger class)-->
+                    <input type="checkbox" name="hamburgermenu" id="hamburgermenu" class="hamburger">
+                    <label for="hamburgermenu" class="hamburgermenu">&#9776;</label>
+
+                    <!-- Navigation Links (menu class)-->
+                    <div class="navlinks">
+                        <li><a href="/" class="navlink">Home</a></li>
+                        <li><a href="#about" class="navlink">About</a></li>
+                        <li><a href="#cpd" class="navlink">CPD</a></li>
+                        <li><a href="/projects" class="navlink">Projects</a></li>
+                        <li class="contactbtn"><a href="/contact" class="navlink">Contact Me</a></li>
                     </div>
-                </div>
-                <div class="navitems-container">
-                    <div class="navitem">
-                        <a href="">Home</a>
+                </ul>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="static/images/wave.png" alt="wave" width="100rem">
                     </div>
-                    <div class="navitem">
-                        <a href="#about">About</a>
+                    <div class="hero-header">
+                        <p>Hey! <span class="orange-text">I'm Andrew...</span></p>
                     </div>
-                    <div class="navitem">
-                        <a href="#projects">Projects</a>
+                    <div class="hero-text">
+                        <p>I'm a</p>
+                        <p class="typewrite orange-text" data-period="2000"
+                            data-type='[ "‎ Developer!", "‎ Student!", "‎ Creator!" ]'>I'm
+                            a <span class="wrap"></span>
+                        </p>
                     </div>
-                    <div class="navitem">
-                        <a href="/cpd">CPD</a>
-                    </div>
-                    <div class="navitem">
-                        <a href="/contact" class="contactbtn">Contact Me</a>
-                    </div>
+                    <div class="gettingstartedbtn"><a href="#about">Get Started!</a></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
