@@ -9,22 +9,23 @@
 
 * {
     box-sizing: border-box;
+    /* Specifies behaviour of height and width properties */
 }
 
 html {
     scroll-behavior: smooth;
-    /* 
-    When user clicks a button that directs them to another section of the page
-    Scrolling will be smooth rather than an instant redirect.
-    */
+    /* When user clicks a button that directs them to another section of the page
+    Scrolling will be smooth rather than an instant redirect.*/
 }
 
 body {
     font-family: "open-sans";
+    /* Sets text font to use the font I imported on line 1 */
     margin: 0;
+    /* Removes the margin for the entire html document. We want the html doc to be filled entirely */
     color: white;
     background: radial-gradient(50% 50% at 50% 50%, var(--blue) 0%, var(--darkblue) 100%);
-    /* Removes the margin for the entire html document. We want the html doc to be filled entirely */
+    /* Sets text colour to white and sets the default background for the entire html doc */
 }
 
 .md-text {
@@ -32,13 +33,15 @@ body {
 }
 
 .hero-background {
-    height: 100vh;
+    margin-bottom: 25vh;
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    /* Aligns all child items vertically */
     justify-content: space-between;
+    /* Specifies how the child items should be placed along the axis */
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -55,6 +58,7 @@ body {
 
 .navigation li {
     list-style: none;
+    /* Removes the bullet points from a list */
 }
 
 .navtitle {
@@ -65,6 +69,7 @@ body {
 .navlinks {
     display: flex;
     gap: 1em;
+    /* Specifies a 1em gap between each column */
     font-size: 18px;
 }
 
@@ -81,6 +86,7 @@ body {
     border: 1px solid transparent;
     background-color: var(--orange);
     padding: 0.5rem 1rem;
+    /* Makes the element look like a button */
 }
 
 .contactbtn a {
@@ -92,12 +98,16 @@ body {
 
 .navmenu input[type=checkbox] {
     display: none;
+    /* Hides the element by default, a media query will show 
+    it when we reach a certain breakpoint */
 }
 
 .hamburgermenu {
     display: none;
     font-size: 24px;
     user-select: none;
+    /* Hides the element by default, a media query will show 
+    it when we reach a certain breakpoint */
 }
 
 .hero-container {
@@ -107,22 +117,20 @@ body {
 
 .hero-logo img {
     border-radius: 9999px;
-    border-color: white;
-    border-width: 5px;
-    border-style: solid;
+    /*Makes the border as circular as possible*/
+    border: 5px solid white;
 }
 
 .hero-header {
-    font-size: 64px !important;
+    font-size: 64px;
     font-weight: bold;
 }
 
 .hero-text {
     display: flex;
     word-wrap: break-word;
+    /*When the text reaches the end of the screen, continue it on the next line*/
     justify-content: center;
-    align-items: center;
-    margin-top: -90px;
     font-size: 48px;
     font-weight: bold;
 }
@@ -130,11 +138,13 @@ body {
 .gettingstartedbtn {
     margin-left: auto;
     margin-right: auto;
+    /* Centers the element */
     border-radius: 0.375rem;
     border: 1px solid transparent;
     background-color: var(--orange);
     padding: 0.5rem 1rem;
     width: fit-content;
+    /* Ensures the background of the element fits around it's content, not the parent div */
 }
 
 .gettingstartedbtn a {
@@ -147,21 +157,23 @@ body {
 
 #totopbtn {
     display: none;
+    /* Set it to "block" via JS when we reach a certain scrollHeight */
     position: fixed;
+    /* Will always stay in the same position */
     bottom: 20px;
     right: 30px;
-    font-size: 18px;
     border: 3px solid var(--orange);
-    outline: none;
     background-color: var(--darkblue);
-    color: white;
     cursor: pointer;
-    padding: 15px;
+    /* Changes the cursor to a pointer when hovered over */
+    padding: 6px;
     border-radius: 9999px;
+    /* Makes the element as circular as possible */
 }
 
 #totopbtn:hover {
     background-color: var(--blue);
+    /* Change the background colour when hovered over*/
 }
 
 .about {
@@ -184,6 +196,9 @@ body {
     justify-content: center;
     grid-gap: 1rem;
     align-items: center;
+    /* The properties above allow me to format my elements in a grid-format,
+    The layout of the child elements of this container is dependant on the format
+    of "grid-template-areas" */
 }
 
 .grid-container img {
@@ -192,23 +207,28 @@ body {
 
 .aboutdevelopment {
     grid-area: a;
+    /* In reference to "grid-template-areas" in "grid-container" */
 }
 
 .aboutcontent {
     grid-area: b;
+    /* In reference to "grid-template-areas" in "grid-container" */
 }
 
 .aboutpersonal {
     grid-area: c;
+    /* In reference to "grid-template-areas" in "grid-container" */
 }
 
-.grid-container>div {
+.grid-container div {
     text-align: center;
 }
 
 #aboutdevelopmentimg {
     cursor: pointer;
     transition: 0.3s;
+    /* Causes any edits to the element to take 0.3s instead of being
+    instantaneous */
 }
 
 #aboutdevelopmentimg:hover {
@@ -216,11 +236,14 @@ body {
     transform: scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px var(--darkblue));
+    /* Slightly enlarges the image on hover and adds a drop-shadow */
 }
 
 #aboutcontentimg {
     cursor: pointer;
     transition: 0.3s;
+    /* Causes any edits to the element to take 0.3s instead of being
+    instantaneous */
 }
 
 #aboutcontentimg:hover {
@@ -228,11 +251,14 @@ body {
     transform: scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px var(--darkblue));
+    /* Slightly enlarges the image on hover and adds a drop-shadow */
 }
 
 #aboutpersonalimg {
     cursor: pointer;
     transition: 0.3s;
+    /* Causes any edits to the element to take 0.3s instead of being
+    instantaneous */
 }
 
 #aboutpersonalimg:hover {
@@ -240,6 +266,7 @@ body {
     transform: scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px var(--darkblue));
+    /* Slightly enlarges the image on hover and adds a drop-shadow */
 }
 
 .enlargeimg {
@@ -254,16 +281,18 @@ body {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
+    /* Hides this element until the image is clicked on then JS handles
+    making anything with this className visible */
 }
 
-.enlargeimg>img {
+.enlargeimg img {
     margin: auto;
     display: block;
     width: 100%;
     max-width: 1000px;
 }
 
-.enlargeimg>.imgdescription {
+.enlargeimg .imgdescription {
     margin: auto;
     display: block;
     width: 80%;
@@ -274,12 +303,14 @@ body {
     height: 150px;
 }
 
-.enlargeimg>img,
-.enlargeimg>.imgdescription {
+.enlargeimg img,
+.enlargeimg .imgdescription {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
+    /* Zoom transition when the image is brought into perspective (via JS) 
+    The tranisitions are defined below*/
 }
 
 @-webkit-keyframes zoom {
@@ -310,6 +341,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    /* Close button that is be position at the top right of the screen */
 }
 
 .close-enlarged:hover,
@@ -340,6 +372,7 @@ body {
 
 table {
     border-collapse: collapse;
+    /* Removes "double borders" from the table */
     border-spacing: 10px;
     width: 100%;
     border: 1px solid #ddd;
@@ -368,8 +401,6 @@ tr:nth-child(even) {
 }
 
 .footer {
-    /* 48px */
-    /* 16px */
     color: white;
     background-color: var(--blue);
     margin-top: 2rem;
@@ -381,6 +412,7 @@ tr:nth-child(even) {
     display: flex;
     justify-content: center;
     order: 2;
+    /* Controls the order in which child elements inside the div are displayed */
     color: white;
 }
 
@@ -403,15 +435,16 @@ tr:nth-child(even) {
     color: white;
 }
 
+/* For input elements that are of type text and email */
 input[type=text],
 input[type=email],
-select,
 textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    /* Allows the user to resize the text box vertically */
 }
 
 label {
@@ -457,16 +490,18 @@ input[type=submit] {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+/* Whilst the screen width is below 600px*/
+@media (max-width: 600px) {
 
-    .col-25,
-    .col-75,
+    .col-1,
+    .col-2,
     input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 }
 
+/*Whilst the screen width is below 768px*/
 @media (min-width: 768px) {
     .footer {
         display: flex;
@@ -481,12 +516,7 @@ input[type=submit] {
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .enlargeimg>img {
-        width: 100%;
-    }
-}
-
+/*Whilst the screen width is below 700px*/
 @media (max-width: 700px) {
     .cpdtitle {
         font-size: 30px !important;
@@ -496,8 +526,13 @@ input[type=submit] {
         margin: 0 !important;
         margin: 0 !important;
     }
+
+    .enlargeimg>img {
+        width: 100%;
+    }
 }
 
+/*Whilst the screen width is below 963px*/
 @media (max-width: 963px) {
 
     .navigation {
@@ -547,18 +582,21 @@ input[type=submit] {
     }
 }
 
+/*Whilst the screen width is below 420px*/
 @media (max-width: 420px) {
     .navtitle {
         font-size: 24px;
     }
 }
 
+/*Whilst the screen width is below 500px*/
 @media (max-width: 500px) {
     .hero-text {
         font-size: 8vw;
     }
 }
 
+/*Whilst the screen width is below 1240px*/
 @media (max-width: 1240px) {
     .navigation {
         margin-left: 10%;
@@ -566,6 +604,7 @@ input[type=submit] {
     }
 }
 
+/*Whilst the screen width is below 1084px*/
 @media (max-width: 1084px) {
     .navigation {
         margin-left: 5%;
