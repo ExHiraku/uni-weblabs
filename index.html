@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/win1udz.css">
-    <!-- Imports an Adobe Font, this is NOT a css framework -->
     <link rel="stylesheet" href="static/styles/style.css">
     <!-- Imports CSS classes from a local stylesheet -->
     <link rel="shortcut icon" href="static/images/wavewithbg_tp.ico" type="image/x-icon">
@@ -16,7 +14,7 @@
     <title>Andrew | CPD Portfolio</title>
 </head>
 
-<body style="font-family: open-sans;">
+<body id="home">
 
     <!-- Navigation Menu/Header + Hero Section -->
     <div class="hero-background">
@@ -39,7 +37,7 @@
                     <li><a href="#about" class="navlink">About</a></li>
                     <li><a href="#cpd" class="navlink">CPD</a></li>
                     <li><a target="_blank" href="https://github.com/ExHiraku" class="navlink">Projects</a></li>
-                    <li class="contactbtn"><a target="_blank" href="/contact" class="navlink">Contact Me</a></li>
+                    <li class="contactbtn"><a href="/contact" class="navlink">Contact Me</a></li>
                 </div>
             </ul>
         </div>
@@ -70,7 +68,8 @@
         <div class="grid-container">
             <div class="aboutdevelopment">
                 <h1 class="orange-text">Development</h1>
-                <p>Development is a (as of mid 2020-lockdown) a 2 year hobby of mine that I have been progressively
+                <p class="md-text">Development is (as of mid 2020-lockdown) a 2 year hobby of mine that I have been
+                    progressively
                     improving in almost daily. Starting off with very basic python, moving up to more intermediate and
                     advanced aspects of the language through developing discord bots. I used to take enjoyment from
                     running communities on the platform, and having the ability to develop my own bots to do whatever I
@@ -83,7 +82,8 @@
             </div>
             <div class="aboutcontent">
                 <h1 class="orange-text">Content</h1>
-                <p>Amongst many other individuals my age, becoming a content creator when I was older was a huge dream
+                <p class="md-text">Amongst many other individuals my age, becoming a content creator when I was older
+                    was a huge dream
                     of mine, and still is to an extent, however my passion now lies within development and
                     entrepreneurship. I still create content from time to time in the form of twitch streams, and have
                     recently begun short-form content for platforms such as YouTube and TikTok.</p>
@@ -91,7 +91,8 @@
             </div>
             <div class="aboutpersonal">
                 <h1 class="orange-text">Personal</h1>
-                <p>I'm a 19 year old developer and aspiring entrepreneur. I am currently trying to grow and maintain my
+                <p class="md-text">I'm a 19 year old developer and aspiring entrepreneur. I am currently trying to grow
+                    and maintain my
                     own software development company called <a target="_blank"
                         href="https://exultsoftware.com">Exult</a>. It currently
                     has a few projects including Discord Bots, Minecraft modding, Minecraft modpacks, a Minecraft
@@ -129,15 +130,14 @@
                     <td>Job (Remote Python Developer)</td>
                     <td>10</td>
                     <td>I am a remote python developer for an american games hosting company called <a target="_blank"
-                            href="https://bisecthosting.com">BisectHosting</a>. This
+                            href="https://bisecthosting.com" class="orange-text">BisectHosting</a>. This
                         is a contractor role that allows me to work as little or as many hours as I want providing there
                         is work available to be completed. I average between 20 and 30 hours per week, and I am paid
                         hourly for this role.</td>
-                    <td><a target="_blank" href="static/images/work_evidencing.png">Direct image link to an average
-                            working week's
-                            timesheet.</a><br><br>Repository containing the code I write for this company can be shared
-                        upon
-                        request, this must remain closed-source due to previous attemps of stealing code without credit.
+                    <td><a target="_blank" href="static/images/work_evidencing.png" class="orange-text">Direct image
+                            link to an average working week's timesheet.</a><br><br>Repository containing the code I
+                        write for this company can be shared upon request, this must remain closed-source due to
+                        previous attemps of stealing code without credit.
                     </td>
                 </tr>
                 <tr>
@@ -147,9 +147,8 @@
                         (Open-Source Software) for this event, I contributed a code foundations and structure rewrite,
                         and as a side-note, I have prepared new and improved hosting options for their bot as well.
                     </td>
-                    <td><a target="_blank" href="https://github.com/NTUDevSoc/Discord-Bot/tree/dpy2.0-rewrite">GitHub
-                            Repository link
-                            (DevSoc are yet to review my changes)</a></td>
+                    <td><a target="_blank" href="https://github.com/NTUDevSoc/Discord-Bot/tree/dpy2.0-rewrite"
+                            class="orange-text">GitHub Repository link (DevSoc are yet to review my changes)</a></td>
                 </tr>
                 <tr>
                     <td>Digital Horizons Week</td>
@@ -158,12 +157,31 @@
                         the work they are doing as part of their course, and get involved in special lectures and
                         activities instead. To evidence attendance of these events/lectures we were required to take
                         notes on the information given throughout the week.</td>
-                    <td><a target="_blank"
-                            href="https://docs.google.com/document/d/1BdL1xKARICAHtMW1KkTxGq_bMg8eTZ8gI12i7DwDvAY/edit?usp=sharing">Google
-                            document containing all notes made.</a>
+                    <td><a target="_blank" href="/cpd" class="orange-text">Google document containing all notes
+                            made.</a>
                     </td>
                 </tr>
             </table>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="footercontainer">
+            <a target="_blank" href="https://github.com/ExHiraku" style="margin-right:1rem;">
+                <img src="static/images/github.svg" class="footericon" alt="GitHub Icon">
+            </a>
+            <a target="_blank" href="https://twitter.com/ExHiraku" style="margin-right:1rem;">
+                <img src="static/images/twitter.svg" class="footericon" alt="Twitter Icon">
+            </a>
+            <a target="_blank" href="https://twitch.tv/exhiraku" style="margin-right:1rem;">
+                <img src="static/images/twitch.svg" class="footericon" alt="Twitch Icon">
+            </a>
+            <a target="_blank" href="https://instagram.com/andehx">
+                <img src="static/images/instagram.svg" class="footericon" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="footercopyright">
+            <p>&copy; 2022 Andrew Mason. All rights reserved.</p>
         </div>
     </div>
 
@@ -185,9 +203,9 @@
         <div class="imgdescription" id="descabtimgpers"></div>
     </div>
 
-    <button onclick="goToTop()" id="totopbtn" title="Go to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <a href="#home" id="totopbtn"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <script src="static/js/main.js"></script>
+        <script src="static/js/main.js"></script>
 </body>
 
 </html>

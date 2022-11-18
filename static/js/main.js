@@ -57,25 +57,18 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
-var toTopButton = document.querySelector("#totopbtn");
-var aboutSection = document.querySelector("#about");
-
-function scrollFunction() {
-    if (document.body.scrollTop > aboutSection.scrollTop) {
-        toTopButton.style.display = "block";
+function scrollToTop() {
+    var doc = document.documentElement;
+    var btn = document.getElementById("totopbtn");
+    var scrollProgress = doc.scrollHeight - doc.clientHeight;
+    if ((doc.scrollTop / scrollProgress) > 0.30) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
     }
 }
 
-function goToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-window.onscroll = function () {
-    console.log("scrolled");
-    console.log(aboutSection.scrollTop);
-    scrollFunction()
-};
+document.addEventListener("scroll", scrollToTop)
 
 var enlargedImageDev = document.getElementById("enlargeimgdev");
 var enlargedImageContent = document.getElementById("enlargeimgcontent");
