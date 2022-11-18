@@ -32,7 +32,7 @@
 
             <!-- Navigation Links (menu class)-->
             <div class="navlinks">
-                <li><a href="/uni-weblabs" class="navlink">Back to Site</a></li>
+                <li><a href="/" class="navlink">Back to Site</a></li>
             </div>
         </ul>
     </div>
@@ -40,14 +40,18 @@
     <!-- Hero Section -->
     <div class="hero-container">
         <div class="hero-content">
+            <div class="hero-logo">
+                <img src="../static/images/love.png" alt="wave" width="100rem">
+            </div>
             <div class="hero-header">
                 <p style="margin-bottom: 3rem;"><span class="orange-text">Contact</span> me!</p>
             </div>
             <div class="form-container">
+                <!-- This form has no functionality, it is purely cosmetic -->
                 <form>
                     <div class="row">
                         <div class="col-25">
-                            <label for="fullName">Full Name</label>
+                            <label for="name">Full Name</label>
                         </div>
                         <div class="col-75">
                             <input type="text" name="name" placeholder="Full Name" required>
@@ -66,7 +70,7 @@
                             <label for="subject">Subject</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" name="_subject" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                     </div>
                     <div class="row">
@@ -85,7 +89,9 @@
         </div>
     </div>
 
+    <!-- Footer Section -->
     <div class="footer" id="footer">
+        <!-- Social Media Icons -->
         <div class="footercontainer">
             <a target="_blank" href="https://github.com/ExHiraku" style="margin-right:1rem;">
                 <img src="../static/images/github.svg" class="footericon" alt="GitHub Icon">
